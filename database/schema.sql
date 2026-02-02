@@ -1,0 +1,6 @@
+CREATE TABLE visitor_pass (
+    id SERIAL PRIMARY KEY,
+    visitor_name VARCHAR(100) NOT NULL,
+    pass_code INTEGER NOT NULL UNIQUE,
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
